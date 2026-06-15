@@ -28,7 +28,7 @@ import re
 import pandas as pd
 
 
-PROJECT_DIR = Path("/Users/harshadghodke/AIML/pdl1-mini-binder-design")
+PROJECT_DIR = Path(__file__).resolve().parent.parent
 STUDY_DIR = PROJECT_DIR / "data" / "results" / "param_sensitivity"
 
 OUT_DIR = PROJECT_DIR / "viewer_structures" / "passed_31"

@@ -105,11 +105,7 @@ GitHub should **not** be used for bulk generated data, model weights, MD traject
 
 ### Local Mac folder
 
-The local working folder is:
-
-```text
-~/AIML/pdl1-mini-binder-design/
-```
+The local working folder is the cloned repository directory.
 
 This is the main project workspace. It contains both Git-tracked project files and the local `data/` folder.
 
@@ -132,7 +128,7 @@ Google Drive is useful as temporary staging for Colab runs. It is not treated as
 ## Repository Structure
 
 ```text
-pdl1-mini-binder-design/
+Binder_design/
 ├── README.md
 ├── .gitignore
 ├── data/
@@ -231,7 +227,7 @@ This folder may include:
 - viewer-ready files
 - exported analysis artifacts
 
-The live HTML pages are maintained separately in the `hg-portfolio` repository. This folder preserves the computational outputs that feed those pages.
+The live HTML pages are maintained separately in a portfolio repository. This folder preserves the computational outputs that feed those pages.
 
 ---
 
@@ -239,16 +235,12 @@ The live HTML pages are maintained separately in the `hg-portfolio` repository. 
 
 ### Editing code and notebooks
 
-Use the local Mac repo as the main editing environment:
-
-```text
-~/AIML/pdl1-mini-binder-design/
-```
+Use the local Mac repo as the main editing environment.
 
 Typical workflow:
 
 ```bash
-cd ~/AIML/pdl1-mini-binder-design
+cd /path/to/Binder_design
 git status
 git add -A
 git commit -m "Describe the change"
@@ -267,8 +259,8 @@ drive.mount('/content/drive')
 ```
 
 ```bash
-!git clone https://github.com/hghodkephd/pdl1-mini-binder-design.git /content/pdl1-mini-binder-design
-%cd /content/pdl1-mini-binder-design
+!git clone https://github.com/singhnitink/Binder_design.git /content/Binder_design
+%cd /content/Binder_design
 ```
 
 Large outputs produced in Colab should be saved temporarily to Google Drive, then copied back to the local Mac project folder if they need to be preserved.
@@ -371,21 +363,17 @@ These analyses are exploratory and are intended to illustrate how computationall
 
 This repository contains the computational work and curated outputs.
 
-The public-facing project pages live in the separate portfolio repository:
-
-```text
-https://github.com/hghodkephd/hg-portfolio
-```
+The public-facing project pages live in a separate portfolio repository.
 
 The portfolio pages translate selected results from this repo into accessible explanations for a broader technical audience.
 
 The intended separation is:
 
 ```text
-pdl1-mini-binder-design/
+Binder_design/
 = computational workflow, notebooks, scripts, and curated support outputs
 
-hg-portfolio/
+portfolio/
 = public-facing HTML pages served by GitHub Pages
 ```
 
@@ -404,9 +392,3 @@ Recommended practice:
 - use `portfolio_pages/` only for curated assets needed to support public presentation
 
 ---
-
-## Author
-
-Harshad Ghodke, PhD
-
-Experimental protein engineer and molecular biophysicist building direct fluency with computational protein design workflows.
