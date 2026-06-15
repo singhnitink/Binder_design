@@ -1,0 +1,5 @@
+rsync(85309): error:  : (l)stat: No such file or directory
+rsync(85309): error:  : (l)stat: No such file or directory
+rsync(85309): error:  : (l)stat: No such file or directory
+rsync(85309): error:  : (l)stat: No such file or directory
+rsync(85309): warning: child 85310 exited with status 23

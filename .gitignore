@@ -1,0 +1,67 @@
+# ------------------------------------------------------------
+# Local data/results
+# Keep the data folder on your Mac, but do not track its contents in Git.
+# Only data/README.md is tracked.
+# ------------------------------------------------------------
+data/*
+!data/README.md
+
+# ------------------------------------------------------------
+# Portfolio support outputs
+# Keep curated portfolio outputs tracked unless they become too large.
+# If needed later, selectively ignore large files inside portfolio_pages/.
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# Notebook checkpoints
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# Google Drive temporary folders
+# ------------------------------------------------------------
+.tmp.drivedownload/
+.tmp.driveupload/
+
+# ------------------------------------------------------------
+# macOS / system files
+# ------------------------------------------------------------
+.DS_Store
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.pyc
+.env
+
+# ------------------------------------------------------------
+# Large model/cache files
+# ------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.safetensors
+.cache/
+models/
+weights/
+model_cache/
+
+# ------------------------------------------------------------
+# Large numerical arrays / generated artifacts
+# ------------------------------------------------------------
+*.npz
+*.npy
+
+# ------------------------------------------------------------
+# Molecular dynamics / trajectory files
+# ------------------------------------------------------------
+*.xtc
+*.trr
+*.dcd
+*.nc
+*.h5
+*.chk
+*.cpt

@@ -1,0 +1,875 @@
+{
+  "analysis_type": "full_sidechain",
+  "provenance": {
+    "hotspot_source": "06_param_sensitivity_runner.ipynb / conditions.csv",
+    "hotspot_map": {
+      "clusterA": [
+        18,
+        20,
+        120,
+        122
+      ],
+      "clusterB": [
+        26,
+        56,
+        113,
+        123,
+        125
+      ],
+      "distributed": [
+        18,
+        20,
+        26,
+        56,
+        113,
+        120,
+        122,
+        125
+      ]
+    },
+    "contact_definition": "Residue pair counted if any heavy atom pair is within 4.5 \u00c5; closest atom pair retained for distance/atom labels.",
+    "representation": "ESMFold binder full sidechains superimposed onto RFdiffusion complex by C\u03b1 alignment",
+    "native_mimicry_source": "Native PD-1/PD-L1 contacts derived from df_native / PDB 4ZQK",
+    "extended_metrics_note": "BSA uses BioPython Shrake-Rupley. Closest atom-pair anatomy classifies the nearest atom pair for each residue-pair contact. Interface normal-complementarity is a custom proxy, not validated Lawrence-Colman Sc."
+  },
+  "contact_cutoff_angstroms": 4.5,
+  "n_designs_analyzed": 31,
+  "total_contacts": 499,
+  "alignment_rmsds": {
+    "len70_clusterA_noise05__design_19_0_rank0": 0.243,
+    "len70_distributed_noise0__design_17_0_rank1": 0.326,
+    "len25_clusterA_noise0__design_11_0_rank1": 0.407,
+    "len70_clusterB_noise0__design_19_0_rank1": 0.441,
+    "len70_clusterA_noise0__design_3_0_rank7": 0.449,
+    "len70_distributed_noise0__design_5_0_rank2": 0.459,
+    "len70_clusterB_noise0__design_17_0_rank0": 0.468,
+    "len100_clusterA_noise0__design_16_0_rank6": 0.519,
+    "len100_distributed_noise0__design_5_0_rank0": 0.533,
+    "len70_clusterA_noise0__design_16_0_rank5": 0.547,
+    "len25_clusterA_noise0__design_15_0_rank0": 0.562,
+    "len100_clusterA_noise0__design_13_0_rank4": 0.565,
+    "len100_distributed_noise0__design_18_0_rank1": 0.583,
+    "len100_clusterB_noise05__design_0_0_rank1": 0.609,
+    "len70_clusterB_noise0__design_15_0_rank2": 0.641,
+    "len70_distributed_noise0__design_10_0_rank3": 0.675,
+    "len50_clusterB_noise0__design_19_0_rank0": 0.704,
+    "len100_clusterA_noise05__design_14_0_rank3": 0.713,
+    "len100_clusterA_noise05__design_3_0_rank2": 0.763,
+    "len100_clusterA_noise0__design_10_0_rank3": 0.778,
+    "len100_clusterB_noise05__design_13_0_rank0": 0.789,
+    "len100_clusterA_noise0__design_9_0_rank8": 0.797,
+    "len70_clusterA_noise05__design_13_0_rank1": 0.827,
+    "len50_distributed_noise0__design_4_0_rank0": 0.84,
+    "len70_clusterA_noise0__design_7_0_rank6": 0.879,
+    "len70_distributed_noise05__design_14_0_rank0": 0.938,
+    "len50_clusterA_noise0__design_9_0_rank0": 1.006,
+    "len50_clusterA_noise05__design_0_0_rank0": 1.243,
+    "len100_distributed_noise0__design_15_0_rank5": 1.412,
+    "len70_clusterB_noise05__design_17_0_rank0": 1.428,
+    "len70_clusterA_noise0__design_10_0_rank1": 1.457
+  },
+  "contact_frequency": {
+    "clusterA": {
+      "18": 18.8,
+      "19": 43.8,
+      "20": 6.2,
+      "43": 6.2,
+      "44": 6.2,
+      "45": 6.2,
+      "46": 12.5,
+      "47": 6.2,
+      "48": 6.2,
+      "51": 31.2,
+      "52": 43.8,
+      "55": 6.2,
+      "56": 18.8,
+      "57": 12.5,
+      "58": 18.8,
+      "60": 18.8,
+      "61": 50.0,
+      "62": 18.8,
+      "63": 18.8,
+      "64": 6.2,
+      "65": 6.2,
+      "66": 12.5,
+      "67": 12.5,
+      "68": 6.2,
+      "72": 6.2,
+      "73": 18.8,
+      "74": 6.2,
+      "75": 31.2,
+      "76": 37.5,
+      "77": 12.5,
+      "78": 6.2,
+      "79": 6.2,
+      "113": 12.5,
+      "114": 12.5,
+      "115": 25.0,
+      "116": 12.5,
+      "117": 50.0,
+      "118": 56.2,
+      "119": 87.5,
+      "120": 93.8,
+      "121": 93.8,
+      "122": 50.0,
+      "123": 50.0,
+      "124": 12.5
+    },
+    "clusterB": {
+      "19": 28.6,
+      "51": 85.7,
+      "52": 71.4,
+      "53": 14.3,
+      "56": 28.6,
+      "60": 71.4,
+      "61": 100.0,
+      "62": 57.1,
+      "63": 28.6,
+      "65": 14.3,
+      "66": 14.3,
+      "76": 42.9,
+      "78": 14.3,
+      "115": 28.6,
+      "116": 14.3,
+      "117": 28.6,
+      "118": 57.1,
+      "119": 100.0,
+      "120": 100.0,
+      "121": 100.0,
+      "122": 85.7,
+      "123": 28.6
+    },
+    "distributed": {
+      "50": 12.5,
+      "51": 50.0,
+      "52": 50.0,
+      "53": 12.5,
+      "57": 12.5,
+      "58": 25.0,
+      "59": 12.5,
+      "60": 62.5,
+      "61": 87.5,
+      "62": 25.0,
+      "63": 25.0,
+      "66": 12.5,
+      "68": 12.5,
+      "69": 12.5,
+      "73": 12.5,
+      "76": 12.5,
+      "111": 12.5,
+      "112": 12.5,
+      "113": 12.5,
+      "114": 12.5,
+      "115": 37.5,
+      "117": 12.5,
+      "118": 25.0,
+      "119": 62.5,
+      "120": 100.0,
+      "121": 100.0,
+      "122": 75.0,
+      "123": 62.5,
+      "124": 25.0,
+      "125": 12.5
+    }
+  },
+  "hotspot_coverage": {
+    "clusterA": {
+      "mean": 42.2,
+      "std": 19.2,
+      "n_designs": 16
+    },
+    "clusterB": {
+      "mean": 11.4,
+      "std": 9.9,
+      "n_designs": 7
+    },
+    "distributed": {
+      "mean": 25.0,
+      "std": 8.8,
+      "n_designs": 8
+    }
+  },
+  "hotspot_coverage_per_design": [
+    {
+      "rank": 1,
+      "condition_id": "len70_clusterA_noise05",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 1,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120
+      ],
+      "missed_residues": [
+        18,
+        20,
+        122
+      ]
+    },
+    {
+      "rank": 3,
+      "condition_id": "len25_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 1,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120
+      ],
+      "missed_residues": [
+        18,
+        20,
+        122
+      ]
+    },
+    {
+      "rank": 5,
+      "condition_id": "len70_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 1,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120
+      ],
+      "missed_residues": [
+        18,
+        20,
+        122
+      ]
+    },
+    {
+      "rank": 8,
+      "condition_id": "len100_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20
+      ]
+    },
+    {
+      "rank": 10,
+      "condition_id": "len70_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20
+      ]
+    },
+    {
+      "rank": 11,
+      "condition_id": "len25_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20
+      ]
+    },
+    {
+      "rank": 12,
+      "condition_id": "len100_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 1,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120
+      ],
+      "missed_residues": [
+        18,
+        20,
+        122
+      ]
+    },
+    {
+      "rank": 18,
+      "condition_id": "len100_clusterA_noise05",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        18,
+        120
+      ],
+      "missed_residues": [
+        20,
+        122
+      ]
+    },
+    {
+      "rank": 19,
+      "condition_id": "len100_clusterA_noise05",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20
+      ]
+    },
+    {
+      "rank": 20,
+      "condition_id": "len100_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        18,
+        120
+      ],
+      "missed_residues": [
+        20,
+        122
+      ]
+    },
+    {
+      "rank": 22,
+      "condition_id": "len100_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20
+      ]
+    },
+    {
+      "rank": 23,
+      "condition_id": "len70_clusterA_noise05",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 3,
+      "coverage_pct": 75.0,
+      "covered_residues": [
+        18,
+        120,
+        122
+      ],
+      "missed_residues": [
+        20
+      ]
+    },
+    {
+      "rank": 25,
+      "condition_id": "len70_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 1,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120
+      ],
+      "missed_residues": [
+        18,
+        20,
+        122
+      ]
+    },
+    {
+      "rank": 27,
+      "condition_id": "len50_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 0,
+      "coverage_pct": 0.0,
+      "covered_residues": [],
+      "missed_residues": [
+        18,
+        20,
+        120,
+        122
+      ]
+    },
+    {
+      "rank": 28,
+      "condition_id": "len50_clusterA_noise05",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 3,
+      "coverage_pct": 75.0,
+      "covered_residues": [
+        20,
+        120,
+        122
+      ],
+      "missed_residues": [
+        18
+      ]
+    },
+    {
+      "rank": 31,
+      "condition_id": "len70_clusterA_noise0",
+      "hotspot_config": "clusterA",
+      "n_hotspots": 4,
+      "n_covered": 2,
+      "coverage_pct": 50.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20
+      ]
+    },
+    {
+      "rank": 4,
+      "condition_id": "len70_clusterB_noise0",
+      "hotspot_config": "clusterB",
+      "n_hotspots": 5,
+      "n_covered": 1,
+      "coverage_pct": 20.0,
+      "covered_residues": [
+        56
+      ],
+      "missed_residues": [
+        26,
+        113,
+        123,
+        125
+      ]
+    },
+    {
+      "rank": 7,
+      "condition_id": "len70_clusterB_noise0",
+      "hotspot_config": "clusterB",
+      "n_hotspots": 5,
+      "n_covered": 0,
+      "coverage_pct": 0.0,
+      "covered_residues": [],
+      "missed_residues": [
+        26,
+        56,
+        113,
+        123,
+        125
+      ]
+    },
+    {
+      "rank": 14,
+      "condition_id": "len100_clusterB_noise05",
+      "hotspot_config": "clusterB",
+      "n_hotspots": 5,
+      "n_covered": 0,
+      "coverage_pct": 0.0,
+      "covered_residues": [],
+      "missed_residues": [
+        26,
+        56,
+        113,
+        123,
+        125
+      ]
+    },
+    {
+      "rank": 15,
+      "condition_id": "len70_clusterB_noise0",
+      "hotspot_config": "clusterB",
+      "n_hotspots": 5,
+      "n_covered": 1,
+      "coverage_pct": 20.0,
+      "covered_residues": [
+        123
+      ],
+      "missed_residues": [
+        26,
+        56,
+        113,
+        125
+      ]
+    },
+    {
+      "rank": 17,
+      "condition_id": "len50_clusterB_noise0",
+      "hotspot_config": "clusterB",
+      "n_hotspots": 5,
+      "n_covered": 0,
+      "coverage_pct": 0.0,
+      "covered_residues": [],
+      "missed_residues": [
+        26,
+        56,
+        113,
+        123,
+        125
+      ]
+    },
+    {
+      "rank": 21,
+      "condition_id": "len100_clusterB_noise05",
+      "hotspot_config": "clusterB",
+      "n_hotspots": 5,
+      "n_covered": 1,
+      "coverage_pct": 20.0,
+      "covered_residues": [
+        56
+      ],
+      "missed_residues": [
+        26,
+        113,
+        123,
+        125
+      ]
+    },
+    {
+      "rank": 30,
+      "condition_id": "len70_clusterB_noise05",
+      "hotspot_config": "clusterB",
+      "n_hotspots": 5,
+      "n_covered": 1,
+      "coverage_pct": 20.0,
+      "covered_residues": [
+        123
+      ],
+      "missed_residues": [
+        26,
+        56,
+        113,
+        125
+      ]
+    },
+    {
+      "rank": 2,
+      "condition_id": "len70_distributed_noise0",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 3,
+      "coverage_pct": 37.5,
+      "covered_residues": [
+        113,
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        125
+      ]
+    },
+    {
+      "rank": 6,
+      "condition_id": "len70_distributed_noise0",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 1,
+      "coverage_pct": 12.5,
+      "covered_residues": [
+        120
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        113,
+        122,
+        125
+      ]
+    },
+    {
+      "rank": 9,
+      "condition_id": "len100_distributed_noise0",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 3,
+      "coverage_pct": 37.5,
+      "covered_residues": [
+        120,
+        122,
+        125
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        113
+      ]
+    },
+    {
+      "rank": 13,
+      "condition_id": "len100_distributed_noise0",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 2,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        113,
+        125
+      ]
+    },
+    {
+      "rank": 16,
+      "condition_id": "len70_distributed_noise0",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 2,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        113,
+        125
+      ]
+    },
+    {
+      "rank": 24,
+      "condition_id": "len50_distributed_noise0",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 1,
+      "coverage_pct": 12.5,
+      "covered_residues": [
+        120
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        113,
+        122,
+        125
+      ]
+    },
+    {
+      "rank": 26,
+      "condition_id": "len70_distributed_noise05",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 2,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        113,
+        125
+      ]
+    },
+    {
+      "rank": 29,
+      "condition_id": "len100_distributed_noise0",
+      "hotspot_config": "distributed",
+      "n_hotspots": 8,
+      "n_covered": 2,
+      "coverage_pct": 25.0,
+      "covered_residues": [
+        120,
+        122
+      ],
+      "missed_residues": [
+        18,
+        20,
+        26,
+        56,
+        113,
+        125
+      ]
+    }
+  ],
+  "mimicry_summary": {
+    "total_hotspot_contacts": 81,
+    "overall": {
+      "novel": 50,
+      "same_class": 25,
+      "exact_match": 6
+    },
+    "by_config": {
+      "clusterA": {
+        "novel": 37,
+        "same_class": 11,
+        "exact_match": 4
+      },
+      "clusterB": {
+        "same_class": 3,
+        "novel": 1
+      },
+      "distributed": {
+        "novel": 12,
+        "same_class": 11,
+        "exact_match": 2
+      }
+    }
+  },
+  "interaction_types": {
+    "clusterA": {
+      "mixed": 42.2,
+      "hydrophobic_or_aromatic": 37.7,
+      "hbond_compatible": 10.1,
+      "salt_bridge_compatible": 10.1
+    },
+    "clusterB": {
+      "mixed": 45.0,
+      "hydrophobic_or_aromatic": 32.5,
+      "salt_bridge_compatible": 15.0,
+      "hbond_compatible": 7.5
+    },
+    "distributed": {
+      "mixed": 45.9,
+      "hydrophobic_or_aromatic": 31.5,
+      "salt_bridge_compatible": 14.4,
+      "hbond_compatible": 8.1
+    }
+  },
+  "native_interaction_types": {
+    "hydrophobic_or_aromatic": 32.6,
+    "hbond_compatible": 17.4,
+    "salt_bridge_compatible": 8.7,
+    "mixed": 41.3
+  },
+  "comparison_to_backbone_only": {
+    "backbone_coverage": {
+      "clusterA": {
+        "mean": 0.266,
+        "std": 0.143
+      },
+      "clusterB": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "distributed": {
+        "mean": 0.141,
+        "std": 0.08
+      }
+    },
+    "full_sidechain_coverage": {
+      "clusterA": 42.2,
+      "clusterB": 11.4,
+      "distributed": 25.0
+    }
+  },
+  "extended_metrics": {
+    "buried_surface_area": {
+      "mean": 648.2,
+      "std": 142.1,
+      "by_config": {
+        "clusterA": {
+          "mean": 646.4,
+          "std": 140.0,
+          "n": 16
+        },
+        "clusterB": {
+          "mean": 697.4,
+          "std": 134.2,
+          "n": 7
+        },
+        "distributed": {
+          "mean": 608.9,
+          "std": 157.6,
+          "n": 8
+        }
+      }
+    },
+    "closest_atom_pair_anatomy": {
+      "overall": {
+        "SC-SC": 0,
+        "SC-BB": 79.6,
+        "BB-SC": 0,
+        "BB-BB": 20.4
+      },
+      "by_config": {
+        "clusterA": {
+          "SC-SC": 0,
+          "SC-BB": 77.6,
+          "BB-SC": 0,
+          "BB-BB": 22.4
+        },
+        "clusterB": {
+          "SC-SC": 0,
+          "SC-BB": 83.3,
+          "BB-SC": 0,
+          "BB-BB": 16.7
+        },
+        "distributed": {
+          "SC-SC": 0,
+          "SC-BB": 80.2,
+          "BB-SC": 0,
+          "BB-BB": 19.8
+        }
+      },
+      "native": {
+        "SC-SC": 47.8,
+        "SC-BB": 28.3,
+        "BB-SC": 23.9,
+        "BB-BB": 0
+      }
+    },
+    "interface_normal_complementarity_proxy": {
+      "mean": 0.178,
+      "std": 0.075,
+      "native": 0.287,
+      "by_config": {
+        "clusterA": {
+          "mean": 0.183,
+          "std": 0.082,
+          "n": 16
+        },
+        "clusterB": {
+          "mean": 0.163,
+          "std": 0.069,
+          "n": 7
+        },
+        "distributed": {
+          "mean": 0.183,
+          "std": 0.072,
+          "n": 8
+        }
+      }
+    }
+  }
+}
