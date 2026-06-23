@@ -132,19 +132,6 @@ Example:
 
 ## Code / Data Operating Workflow
 
-### Editing code and notebooks
-
-Use the local Mac repo as the main editing environment.
-
-Typical workflow:
-
-```bash
-cd /path/to/Binder_design
-git status
-git add -A
-git commit -m "Describe the change"
-git push
-```
 
 ### Running compute in Colab
 
@@ -163,20 +150,6 @@ drive.mount('/content/drive')
 ```
 
 Large outputs produced in Colab should be saved temporarily to Google Drive, then copied back to the local Mac project folder if they need to be preserved.
-
-### Bringing outputs back into Git
-
-Only curated, small outputs should be copied into tracked folders such as `portfolio_pages/`.
-
-Do not commit bulk raw outputs unless there is a specific reason.
-
-A useful rule:
-
-```text
-Can I explain why this exact file belongs in GitHub?
-    yes → keep it tracked
-    no  → leave it in data/ or another ignored local output location
-```
 
 ---
 
