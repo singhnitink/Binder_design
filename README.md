@@ -127,20 +127,6 @@ Example:
 - `portfolio_page3_extract_passed_structures_for_viewer.py`  
   Extracts selected structures for downstream visualization in the portfolio project.
 
-### `portfolio_pages/`
-
-Contains curated outputs that support the separate public portfolio website.
-
-This folder may include:
-
-- selected structures
-- figures
-- summary CSVs
-- tables
-- viewer-ready files
-- exported analysis artifacts
-
-The live HTML pages are maintained separately in a portfolio repository. This folder preserves the computational outputs that feed those pages.
 
 ---
 
