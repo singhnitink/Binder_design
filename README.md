@@ -228,25 +228,6 @@ These analyses are exploratory and are intended to illustrate how computationall
 - OpenMM — molecular simulation exploration
 - Python / Jupyter / Google Colab
 
----
-
-## Relationship to Portfolio
-
-This repository contains the computational work and curated outputs.
-
-The public-facing project pages live in a separate portfolio repository.
-
-The portfolio pages translate selected results from this repo into accessible explanations for a broader technical audience.
-
-The intended separation is:
-
-```text
-Binder_design/
-= computational workflow, notebooks, scripts, and curated support outputs
-
-portfolio/
-= public-facing HTML pages served by GitHub Pages
-```
 
 ---
 
@@ -260,6 +241,4 @@ Recommended practice:
 - keep local data and generated results in `data/`, which is ignored by Git
 - use Google Drive only as temporary Colab staging
 - clear notebook outputs before committing when possible
-- use `portfolio_pages/` only for curated assets needed to support public presentation
-
 ---
