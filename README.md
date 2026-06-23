@@ -20,10 +20,6 @@ This project has three main goals:
 2. Understand how parameter choices affect RFdiffusion and downstream design quality.
 3. Develop a practical analysis framework for triaging computational designs before experimental testing.
 
-The central scientific question is:
-
-> Given current computational protein design tools, how can an experimental scientist generate, filter, and prioritize plausible mini binder candidates for downstream testing?
-
 ---
 
 ## Scientific Context
@@ -74,57 +70,6 @@ Portfolio-ready figures, structures, and summaries
 ```
 
 ---
-
-## Working Model: What Lives Where
-
-This project uses three working locations, each with a distinct purpose.
-
-```text
-GitHub repository
-= code, notebooks, scripts, documentation, and small curated portfolio-support outputs
-
-Local Mac project folder
-= the working copy of the GitHub repo, plus local ignored data in data/
-
-Google Colab / Google Drive
-= temporary compute and staging, not the permanent source of truth
-```
-
-### GitHub
-
-GitHub tracks the project brain:
-
-- README and documentation
-- notebooks
-- reusable scripts
-- configuration files, if added
-- small curated outputs needed to support portfolio pages
-- `data/README.md`, which explains how the local data folder is used
-
-GitHub should **not** be used for bulk generated data, model weights, MD trajectories, large ESMFold/RFdiffusion outputs, or temporary Colab artifacts.
-
-### Local Mac folder
-
-The local working folder is the cloned repository directory.
-
-This is the main project workspace. It contains both Git-tracked project files and the local `data/` folder.
-
-The `data/` folder stays inside the project directory for convenience, but its contents are ignored by Git. This allows notebooks and scripts to use simple relative paths while preventing large generated files from being committed.
-
-### Colab and Google Drive
-
-Google Colab is treated as a disposable compute environment.
-
-The intended workflow is:
-
-```text
-GitHub/Mac repo → clone or pull in Colab → run compute → save outputs temporarily to Drive → bring selected outputs back to the Mac repo
-```
-
-Google Drive is useful as temporary staging for Colab runs. It is not treated as the permanent archive for this project.
-
----
-
 ## Repository Structure
 
 ```text
@@ -148,39 +93,7 @@ Binder_design/
 
 ---
 
-## Directory Notes
 
-### `data/`
-
-The `data/` directory is kept inside the project folder for local use, but its contents are ignored by Git.
-
-Use `data/` for:
-
-- downloaded structures
-- local inputs
-- RFdiffusion outputs
-- ProteinMPNN outputs
-- ESMFold predictions
-- intermediate CSVs
-- logs
-- molecular dynamics files
-- scratch outputs
-
-Only `data/README.md` is tracked.
-
-This setup keeps paths simple while preventing large project outputs from entering GitHub.
-
-Example local layout:
-
-```text
-data/
-├── structures/
-├── sequences/
-├── results/
-├── intermediate/
-├── cache/
-└── scratch/
-```
 
 ### `notebooks/`
 
@@ -352,10 +265,9 @@ These analyses are exploratory and are intended to illustrate how computationall
 - ProteinMPNN — inverse folding / sequence design
 - ESMFold — sequence-based structure prediction
 - BioPython — structure parsing and analysis
-- PyMOL — structure visualization
+- VMD — structure visualization
 - OpenMM — molecular simulation exploration
 - Python / Jupyter / Google Colab
-- GitHub Pages — portfolio presentation
 
 ---
 
