@@ -6,6 +6,11 @@
 data/*
 !data/README.md
 
+# Cloned tools (do not track)
+RFdiffusion/
+ProteinMPNN/
+
+
 # ------------------------------------------------------------
 # Portfolio support outputs
 # Keep curated portfolio outputs tracked unless they become too large.
@@ -65,3 +70,4 @@ model_cache/
 *.h5
 *.chk
 *.cpt
+misc.py

@@ -1,0 +1,10 @@
+sequences:
+- protein:
+    id: A
+    msa: data/results/boltz_inputs/msas/il7ra_design_2_seq_3_binder.csv
+    sequence: KEVEELKEGAKKAEEAAKEAKKKGEELSKKLEEEGKLELAKGVKESLDALAEDLKKKAEELEKKAKELE
+- protein:
+    id: B
+    msa: data/results/boltz_inputs/msas/il7ra_design_2_seq_3_target.csv
+    sequence: DGLKLLIQAWPENRTDLHAFENLEIIRGRTKQHGQFSLAVVSLNITSLGLRSLKEISDGDVIISGNKNLCYANTINWKKLFGTSGQKTKIISNRGENSCKATGQVCHALCSPEGCWGPEPRDCVSCR
+version: 1

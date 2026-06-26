@@ -1,0 +1,6 @@
+[2026-06-26 16:34:27,362][__main__][INFO] - Found GPU with device_name NVIDIA GeForce RTX 4090. Will run RFdiffusion on NVIDIA GeForce RTX 4090
+[2026-06-26 16:34:27,367][rfdiffusion.inference.model_runners][INFO] - Reading checkpoint from /home/nsingh/Desktop/github/Binder_design/RFdiffusion/rfdiffusion/inference/../../models/Complex_base_ckpt.pt
+[2026-06-26 16:34:33,735][rfdiffusion.inference.model_runners][INFO] - Loading checkpoint.
+[2026-06-26 16:34:34,008][rfdiffusion.diffusion][INFO] - Calculating IGSO3.
+[2026-06-26 16:36:05,201][__main__][INFO] - Making design data/results/il7ra_design_0
+[2026-06-26 16:36:05,234][rfdiffusion.inference.model_runners][INFO] - Using contig: ['B7-147/0 60-70']

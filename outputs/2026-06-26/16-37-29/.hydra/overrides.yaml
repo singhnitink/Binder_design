@@ -1,0 +1,7 @@
+- inference.output_prefix=il7ra_project/data/results/il7ra_design
+- inference.input_pdb=il7ra_project/data/structures/il7ra_target.pdb
+- contigmap.contigs=[B17-209/0 60-70]
+- ppi.hotspot_res=[B58,B80,B139]
+- inference.num_designs=1
+- denoiser.noise_scale_ca=0
+- denoiser.noise_scale_frame=0
